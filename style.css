@@ -1,0 +1,125 @@
+body {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  color: darkorchid;
+}
+html {
+  background-image: linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+  width: 100%;
+  height: 100%;
+}
+
+#counter {
+  font-size: 6rem;
+}
+
+#button__wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+#reset {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px #C8C8C8;
+  font-weight: bold;
+  font-size: 2em;
+  color: inherit;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+
+}
+
+#button__increase {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px #C8C8C8;
+  font-weight: bold;
+  font-size: 2em;
+  color: inherit;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+}
+
+#button__decrease {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px #C8C8C8;
+  font-weight: bold;
+  font-size: 2em;
+  color: inherit;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+}
+
+#button__increase:hover {
+  background-color: #C8C8C8
+}
+
+#button__decrease:hover {
+  background-color: #C8C8C8
+}
+
+#reset:hover {
+  background-color: #C8C8C8
+}
+
+
+
+#button__increase:active {
+  transform: scale(0.9);
+}
+
+
+#button__decrease:active {
+  transform: scale(0.9);
+}
+
+#reset:active {
+  transform: scale(0.9)
+}
+
+.negative {
+  color: red;
+  animation: pulse 500ms ease-in-out;
+}
+
+.positive {
+  color: green;
+  animation: pulse 500ms ease-in-out;
+}
+
+.biggerThanTen {
+  color: lightcoral;
+  animation: pulse 500ms ease-in-out;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.2)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
