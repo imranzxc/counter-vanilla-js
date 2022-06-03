@@ -22,7 +22,7 @@ resetBtn.addEventListener('click', () => {
   counterStyle();
 });
 
-function counterStyle() {
+const counterStyle = () => {
   if (count < 0) {
     counter.classList.add('negative');
   } else if (count > 0) {
@@ -34,4 +34,4 @@ function counterStyle() {
     counter.classList.remove('positive');
     counter.classList.remove('biggerThanTen');
   }
-}
+};
